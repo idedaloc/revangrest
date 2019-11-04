@@ -1,0 +1,24 @@
+.title1{
+    color: black;
+    align-self: center;
+    background-color: transparent;
+}
+.home{
+    /* background-image: url('https://cdn.pixabay.com/photo/2018/06/18/01/25/agenda-3481741_960_720.jpg'); */
+    /* background-image: url('file:///C:/Users/ns/I/f/f/app/src/assets/agenda-3481741_960_720.jpg'); */
+    background-image: url("/assets/agenda-3481741_960_720.jpg");
+    background-size: 100%;
+    opacity: 0.6;
+    filter: sepia(70%);
+    background-position-x: center;
+    background-position-y: center;
+    margin: 0;
+    height: 100vh;
+}
+.page-footer{
+    background-color: black
+}
+
+.page-ad{
+    background-color: black
+}

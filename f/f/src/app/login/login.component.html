@@ -1,0 +1,46 @@
+<div class="container-fluid home">
+    <div class="row align-itmes-start">
+        <div class="jumbotron title1">
+            <h1>Agenda</h1>
+        </div>
+    </div>
+    <div class="row align-itmes-end">
+        <div class="col-lg"></div>
+    </div>
+</div>
+<footer class="page-footer pt-4">
+    <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+            <div><button type="button" id="loginB" class="btn btn-outline-darkbtn btn-dark"
+                    (click)="openForm(login)">Login</button></div>
+        </li>
+        <li class="list-inline-item">
+            <div><button type="button" id="signupB" class="btn btn-outline-darkbtn btn-dark"
+                    (click)="openForm(signup)">Signup</button></div>
+        </li>
+    </ul>
+    <div class="footer-ad text-center py-3">
+    </div>
+</footer>
+
+
+<ng-template #login let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Login</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <login-form></login-form>
+</ng-template>
+
+<ng-template #signup let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Signup</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <signup-form></signup-form>
+
+</ng-template>

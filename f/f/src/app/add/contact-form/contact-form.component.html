@@ -1,0 +1,36 @@
+<div class="container">
+    <form action="form" (ngSubmit)="onSubmit()" #contactForm="ngForm" name="contactForm">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" required minlength="4"
+                appFormValidation="dndte"
+                [(ngModel)]="newContact.firstName" name="firstname" #firstName=ngModel>
+               
+            <div id="FI" *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)">
+                <div id="SI" *ngIf="firstName.errors.fb">
+                    Invalid Name
+                </div>
+                <div *ngIf="firstName.errors.minlength">
+                    Invalid length
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required [(ngModel)]="newContact.lastName"
+                name="secondname" #lastName=ngModel>
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="number" class="form-control" id="phoneNumber" required [(ngModel)]="newContact.phoneNumber"
+                name="phonenumber" #phoneNumber=ngModel>
+        </div>
+        <button type="submit" class="btn btn-success" [disabled]="!contactForm.form.valid">Submit</button>
+    </form>
+</div>
+
+
+<div [hidden]="!elementCreated">
+    <p class="successfull">Contact created!!!</p>
+</div>

@@ -1,0 +1,23 @@
+
+<div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 data">
+        <ngb-tabset type="pills" [orientation]="orientation">
+            <ngb-tab title="Contacts">
+                <ng-template ngbTabContent>
+
+                    <contacts></contacts>
+
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab title="Calendar">
+                <ng-template ngbTabContent>
+
+                    <appointments></appointments>
+
+                </ng-template>
+            </ngb-tab>
+        </ngb-tabset>
+    </div>
+    <div class="col-sm-1"></div>
+</div>

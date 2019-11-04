@@ -1,0 +1,35 @@
+ curl -i -X POST -H "Content-Type:application/json" -d '{"date":"2019-07-07 12:30","title":"Demo meeting","description":"Training demo meeting"}' http://localhost:8080/appointment
+ curl http://localhost:8080/
+ curl http://localhost:8080/appointment/1
+ curl http://localhost:8080/appointment/search/findByTitle?title=Demo%20meeting
+ curl -X DELETE http://localhost:8080/appointment/1
+
+
+ curl -i -X POST -H "Content-Type:application/json" -d '{"firstName":"Scott","lastName":"Hemingway","phoneNumber":1234567890}' http://localhost:8090/contact
+ curl http://localhost:8090/
+ curl http://localhost:8090/contact/1
+ curl http://localhost:8090/contact/search/
+ curl -X DELETE http://localhost:8090/contact/1
+
+
+----------------------------------------------------------------------------------------------------------
+ curl -i -X POST -H "Content-Type:application/json" -d '{"date":"2019-07-07 12:30","title":"Demo meeting 1","description":"Training demo meeting 1"}' http://localhost:8080/appointment
+ curl -i -X POST -H "Content-Type:application/json" -d '{"date":"2019-07-07 12:30","title":"Demo meeting 2","description":"Training demo meeting 2"}' http://localhost:8080/appointment
+ curl -i -X POST -H "Content-Type:application/json" -d '{"date":"2019-07-07 12:30","title":"Demo meeting 3","description":"Training demo meeting 3"}' http://localhost:8080/appointment
+ curl -i -X POST -H "Content-Type:application/json" -d '{"date":"2019-07-07 12:30","title":"Demo meeting 4","description":"Training demo meeting 4"}' http://localhost:8080/appointment
+ curl -i -X POST -H "Content-Type:application/json" -d '{"date":"2019-07-07 12:30","title":"Demo meeting 5","description":"Training demo meeting 5"}' http://localhost:8080/appointment
+ curl -i -X POST -H "Content-Type:application/json" -d '{"date":"2019-07-07 12:30","title":"Demo meeting 6","description":"Training demo meeting 6"}' http://localhost:8080/appointment
+ curl -i -X POST -H "Content-Type:application/json" -d '{"date":"2019-07-07 12:30","title":"Demo meeting 7","description":"Training demo meeting 7"}' http://localhost:8080/appointment
+ curl -i -X POST -H "Content-Type:application/json" -d '{"date":"2019-07-07 12:30","title":"Demo meeting 8","description":"Training demo meeting 8"}' http://localhost:8080/appointment
+
+
+------------------------------------------------------------------------------------------------------------
+
+curl -i -X POST -H "Content-Type:application/json" -d '{"firstName":"Scott","lastName":"Hemingway","phoneNumber":1234567890}' http://localhost:8090/contact
+curl -i -X POST -H "Content-Type:application/json" -d '{"firstName":"Karls","lastName":"Fitzgerald","phoneNumber":1222222222}' http://localhost:8090/contact
+curl -i -X POST -H "Content-Type:application/json" -d '{"firstName":"William","lastName":"Poe","phoneNumber":1333333333}' http://localhost:8090/contact
+curl -i -X POST -H "Content-Type:application/json" -d '{"firstName":"T.S.","lastName":"Faulkner","phoneNumber":1444444444}' http://localhost:8090/contact
+curl -i -X POST -H "Content-Type:application/json" -d '{"firstName":"D.W.","lastName":"Tolkien","phoneNumber":1555555555}' http://localhost:8090/contact
+curl -i -X POST -H "Content-Type:application/json" -d '{"firstName":"Stephen","lastName":"Buffa","phoneNumber":1666666666}' http://localhost:8090/contact
+curl -i -X POST -H "Content-Type:application/json" -d '{"firstName":"George","lastName":"Pelacanos","phoneNumber":1777777777}' http://localhost:8090/contact
+curl -i -X POST -H "Content-Type:application/json" -d '{"firstName":"David","lastName":"Mitchell","phoneNumber":1888888888}' http://localhost:8090/contact

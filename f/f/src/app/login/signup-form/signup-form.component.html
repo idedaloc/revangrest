@@ -1,0 +1,25 @@
+<div class="modal-body">
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="formGroup form-group row">
+            <div class="col-sm-2"></div><label clas="center-block col-sm-4 col-form-label">User:</label>
+            <!-- <div class="col-sm-2"></div> -->
+            <div class="col-sm-5"><input class="formControl form-control" FormControlName="user" type="text"></div>
+        </div>
+        <div class="formGroup form-group row">
+            <div class="col-sm-2"></div><label clas="center-block col-sm-4 col-form-label">Password:</label>
+            <!-- <div class="col-sm-2"></div> -->
+            <div class="col-sm-5"><input class="formControl form-control" FormControlName="password" type="text"></div>
+        </div>
+        <div class="formGroup form-group row">
+            <div class="col-sm-2"></div><label clas="center-block col-sm-4 col-form-label">Repeat Password:</label>
+            <!-- <div class="col-sm-2"></div> -->
+            <div class="col-sm-5"><input class="formControl form-control" FormControlName="repeatedPassword"
+                    type="text"></div>
+        </div>
+        <div>
+            <!-- <button type="submit" [disabled]="signupForm.pristine" class="btn btn-success">Submit</button> &nbsp; -->
+            <button type="submit" class="btn btn-success">Submit</button> &nbsp;
+
+        </div>
+    </form>
+</div>
